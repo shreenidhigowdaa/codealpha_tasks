@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="photo.css">
+</head>
+<body>
+  <main>
+    <div class="heading">
+      <h1 class="title">Photo Gallery</h1>
+      <div class="search-box">
+        <input type="search" id="search" placeholder="Search...">
+      </div>
+    </div>
+    <div class="gallery-container gallery" id="photos">
+      <ul id="container">
+        <li> <a href="images/animals.jpg"
+            data-caption="The animal kingdom is a beautiful masterpiece."
+            data-alt="animals">
+            <img src="images/thumbnails.jpg" alt="animals" class="gallery__item">
+          </a>
+        </li>
+        <li><a href="images/ayurveda.jpg"
+            data-caption="The body is the foremost tool for manifesting our mind."
+            data-alt="ayurveda">
+            <img src="images/thumbnails/02.jpg" alt="ayurveda" class="gallery__item">
+          </a>
+        </li>
+        <li> <a href="images/bharathanatyam.jpg"
+            data-caption="Every beat, every gesture tells a story."
+            data-alt="bharathanatyam">
+            <img src="images/thumbnails/03.jpg" alt="bharathanatyam" class="gallery__item">
+          </a>
+        </li>
+        <li><a href="images/country.jpg"
+            data-caption="Fresh air,open spaces"
+            data-alt="country">
+            <img src="images/thumbnails/04.jpg" alt="country" class="gallery__item">
+          </a>
+        </li>
+        <li> <a href="images/enginnering.jpg"
+            data-caption="Building a better future,one design at a time"
+            data-alt="enginnering">
+            <img src="images/thumbnails/05.jpg" alt="enginnering" class="gallery__item">
+          </a>
+        </li>
+        <li> <a href="images/rocket.jpg"
+            data-caption="The art of propulsion" data-alt="rocket">
+            <img src="images/thumbnails/06.jpg" alt="rocket" class="gallery__item">
+          </a>
+        </li>
+        <li><a href="images/india.jpg" data-caption="A land of vibrant colors and rich heritage"
+            data-alt="india">
+            <img src="images/thumbnails/07.jpg" alt="india" class="gallery__item">
+          </a>
+        </li>
+        <li> <a href="images/test1.jpg" data-caption="Stay focused,stay productive"
+            data-alt="test1">
+            <img src="images/thumbnails/08.jpg" alt="test" class="gallery__item">
+          </a>
+        </li>
+        <li><a href="images/yakshagana.jpg" data-caption="Rooted in tradition,inspired by mythology"
+            data-alt="yakshagana">
+            <img src="images/thumbnails/09.jpg" alt="yakshagana" class="gallery__item">
+          </a>
+        </li>
+        <li> <a href="images/science.jpg" data-caption="curiosityis the spart that ignites innovation"
+            data-alt="science">
+            <img src="images/thumbnails/10.jpg" alt="science" class="gallery__item">
+          </a>
+        </li>
+        <li> <a href="images/nature.jpg"
+            data-caption="Nature teaches usresilience"
+            data-alt="nature">
+            <img src="images/thumbnails/11.jpg" alt="nature" class="gallery__item">
+          </a>
+        </li>
+        <li> <a href="images/instrument.jpg"
+            data-caption="Melodies that move,Harmonies that heal"
+            data-alt="instrument">
+            <img src="images/thumbnails/12.jpg" alt="instrument" class="gallery__item">
+          </a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </main>
+  <script>
+    window.addEventListener('load', function () {
+      baguetteBox.run(".gallery", {
+        captions: true,
+        buttons: 'auto',
+        fullScreen: false,
+        noScrollbars: false,
+        titleTag: true,
+        async: false,
+        preload: 2,
+        animation: 'fadeIn',
+        onChange: null
+      });
+    });
+  </script>
+  <script src="photo.js" async></script>
+  <!-- <script src="assets/js/searchFilter.js"></script> -->
+  <script src="photo.js"></script>
+</body>
+</html>
